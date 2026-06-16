@@ -25,7 +25,7 @@ function RouteLine({ title, className, path, label }: { title: string; className
     <div>
       <span className={`dot ${className}`}></span>
       <strong>{title}</strong>
-      <p>{path.length ? path.map(label).join(' -> ') : 'Belum dijalankan'}</p>
+      <p>{path.length ? path.map(label).join(' -> ') : 'Tidak menemukan rute'}</p>
     </div>
   )
 }
