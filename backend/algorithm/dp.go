@@ -23,7 +23,7 @@ func DPRoute(graph models.Graph, source, destination string, food models.Food) m
 		Path:       best.Path,
 		TotalCost:  best.Cost,
 		TotalTime:  best.Time,
-		ExecTimeMs: time.Since(start).Seconds() * 1000,
+		ExecTimeMs: float64(time.Since(start).Nanoseconds()) / 1_000_000,
 		Mode:       mode,
 	}
 }

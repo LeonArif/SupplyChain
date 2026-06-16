@@ -33,7 +33,7 @@ function ResultCard({ title, tone, result }: { title: string; tone: string; resu
         <div><dt>Mode</dt><dd>{result.mode}</dd></div>
         <div><dt>Cost</dt><dd>Rp {Math.round(result.totalCost).toLocaleString('id-ID')}</dd></div>
         <div><dt>Time</dt><dd>{result.totalTime.toFixed(1)} jam</dd></div>
-        <div><dt>Exec</dt><dd>{result.execTimeMs.toFixed(4)} ms</dd></div>
+        {/* <div><dt>Exec</dt><dd>{result.execTimeMs.toFixed(6)} ms</dd></div> */}
       </dl>
     </div>
   )

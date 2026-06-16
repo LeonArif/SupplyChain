@@ -27,7 +27,7 @@ func GreedyRoute(graph models.Graph, source, destination, mode string) models.Ro
 		Path:       path,
 		TotalCost:  totalCost,
 		TotalTime:  totalTime,
-		ExecTimeMs: time.Since(start).Seconds() * 1000,
+		ExecTimeMs: float64(time.Since(start).Nanoseconds()) / 1_000_000,
 		Mode:       normalizedMode,
 	}
 }
